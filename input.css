@@ -1,0 +1,11 @@
+@import "tailwindcss";
+/* src/input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .icon {
+    @apply w-6 h-6; /* sets uniform width & height */
+  }
+}
