@@ -18,7 +18,7 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
     <h1 class="text-3xl"> Greenden </h1>   
    
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden icon">
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden icon">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 </svg>
 
@@ -36,6 +36,23 @@
         </li>
      </ul>
     </nav>
+    <!--side navbar-->
+<section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width:50%;height:100vh; right: -50%;">
+  <ul class="flex flex-col gap-10 items-center text-gray-600">
+      <div class="text-right p-2 w-full">
+        <p id="closenav" class="inline cursor-pointer text-xl">X</p>
+      </div>
+       <li>
+            <a href="./index.html" class="hover:underline" > Home </a>
+        </li>
+        <li>
+             <a href="products.html" class="hover:underline"> Products </a>
+        </li>
+        <li>
+            <a class="hover:underline" href="contact.html"> Contact </a>
+        </li>
+     </ul>
+</section>
     <!-- Contact Section -->
     <section class="p-5 mb-5 flex-grow justify-center items-center text-center"> 
         <h1 class="text-5xl font-bold black mb-4 p-5"> Contact Us </h1>
@@ -61,5 +78,7 @@
     </p>
     <p class="text-gray-600 mt-2">© 2025 Greenden. All rights reserved.</p>
   </footer>
+<script src="contact,js"> </script>
+
 </body>
 </html>
